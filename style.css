@@ -22,7 +22,7 @@ a:link, a:visited {
   color: black;
   padding: 14px 25px;
   margin-bottom: 10px;
-  width: 60%;
+  width: 70%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -44,6 +44,11 @@ table, th, td {
 th, td {
   background-color: #85aa41;
   text-align: center;
+}
+
+div.novinky, div.hlstranka, div.kontakt {
+	width: 1000px;
+	margin-left: 10px;
 }
 
 .Grid-Layout {
@@ -86,4 +91,8 @@ th, td {
 	a:link, a:visited {
 		width: 88%;
 	}
+	div.novinky, div.hlstranka, div.kontakt {
+	width: 90%;
+	margin-left: 10px;
+}
 }
