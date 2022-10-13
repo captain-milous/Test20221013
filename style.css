@@ -2,9 +2,9 @@ body {
 	margin: 0px;
 	display: grid;
   grid-template-areas:
-    'header header header header header header header'
-    'menu menu menu main main main main'
-    'menu menu menu footer footer footer footer';
+    'header header header header header '
+    'menu main main main main'
+    'menu footer footer footer footer';
   gap: 10px;
   padding: 10px;
 }
@@ -44,10 +44,6 @@ table, th, td {
 th, td {
   background-color: #85aa41;
   text-align: center;
-  border-radius: 10px;
-}
-table{
-	width: 500px;
 }
 
 .Grid-Layout {
@@ -77,4 +73,17 @@ table{
 .Flex-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+	body {
+		grid-template-areas:
+    'header'
+    'menu'
+    'main'
+    'footer';
+	}
+	a:link, a:visited {
+		width: 88%;
+	}
 }
