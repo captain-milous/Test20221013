@@ -1,0 +1,40 @@
+body {
+	margin: 0px;
+	display: grid;
+  	grid-template-areas:
+    'header header header header header header header'
+    'menu menu main main main main main'
+    'menu menu footer footer footer footer footer';
+  	gap: 10px;
+  	background-color: #85aa41;
+  	padding: 10px;
+}
+
+.Grid-Layout {
+	text-align: center;
+  	padding: 20px 0;
+  	font-size: 30px;
+  	background-color: #3e8e41;
+}
+
+.Header {
+	grid-area: header;
+}
+
+.Menu {
+	grid-area: menu;
+}
+
+.Main {
+	grid-area: main;
+}
+
+.Footer {
+	grid-area: footer;
+  	font-size: 15px;	
+}
+
+.Flex-container {
+  	display: flex;
+  	flex-wrap: wrap;
+}
