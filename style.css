@@ -1,23 +1,43 @@
 body {
 	margin: 0px;
 	display: grid;
-  	grid-template-areas:
+  grid-template-areas:
     'header header header header header header header'
     'menu menu main main main main main'
     'menu menu footer footer footer footer footer';
-  	gap: 10px;
-  	background-color: #85aa41;
-  	padding: 10px;
+  gap: 10px;
+  background-color: #85aa41;
+  padding: 10px;
+}
+
+a:link, a:visited {
+  background: #85aa41;
+  color: black;
+  padding: 14px 25px;
+  margin-bottom: 10px;
+  width: 80%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid black;
+}
+
+a:hover {
+	background-color: #ffffff;
+}
+
+a:active {
+  background-color: #3e8e41;
 }
 
 .Grid-Layout {
-	text-align: center;
-  	padding: 20px 0;
-  	font-size: 30px;
-  	background-color: #3e8e41;
+  padding: 20px 0;
+  background-color: #3e8e41;
 }
 
 .Header {
+	font-size: 30px;
+	text-align: center;
 	grid-area: header;
 }
 
@@ -31,10 +51,10 @@ body {
 
 .Footer {
 	grid-area: footer;
-  	font-size: 15px;	
+  font-size: 15px;	
 }
 
 .Flex-container {
-  	display: flex;
-  	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
